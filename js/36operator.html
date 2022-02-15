@@ -11,15 +11,39 @@
 <body>
     
     <script>
+        let a = 3;
+        let b = 4;
+        let c = 5;
 
-        // console.log("hello");
-        // console.log("javascript");
+        let d = a + b + c;
+        console.log(d); // 12
 
-        /*
-        console.log("3");
-        console.log("5");
-        */
-        console.log("bts"); // 출력하는 명령문
+        let f = "6";
+
+        let g = a + b + f;
+        console.log(g); // "76"
+
+        let h = f + a + b;
+        console.log(h); // "634"
+
+        let i = a * b + c;
+        console.log(i); // 17
+
+        let j = a + b * c;
+        console.log(j); // 23
+
+        // 연산자 우선순위
+        // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+        // 우선순위가 가장 높은 괄호 ()를 사용해서 연산순서를 코드에 표시해야 함.
+        let k = (a * b) + c;
+        console.log(k); // 17
+
+        let l = a + (b * c);
+        console.log(l);
+
+        let m = (a + b) * c;
+        console.log(m);
 
     </script>
 
