@@ -54,14 +54,14 @@
 
             if (user === computer) {
                 document.querySelector("#result1").innerHTML = "비겼습니다."
-            } else if ((user === 0 ) && (computer === 1)) {
-                document.querySelector("#result1").innerHTML = "졌습니다."
-            } else if ((user === 1) && (computer === 2)) {
-                document.querySelector("#result1").innerHTML = "졌습니다."
-            } else if ((user === 2) && (computer === 0)) {
-                document.querySelector("#result1").innerHTML = "졌습니다."
-            } else {
+            } else if ((user === 0 ) && (computer === 2)) {
                 document.querySelector("#result1").innerHTML = "이겼습니다."
+            } else if ((user === 1) && (computer === 0)) {
+                document.querySelector("#result1").innerHTML = "이겼습니다."
+            } else if ((user === 2) && (computer === 1)) {
+                document.querySelector("#result1").innerHTML = "이겼습니다."
+            } else {
+                document.querySelector("#result1").innerHTML = "졌습니다."
             }      
         }       
 
