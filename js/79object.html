@@ -56,7 +56,7 @@
         */
 
         let e = function() {
-            console.log(aprop);
+            console.log(this.aprop);
         }
 
         c.amethod = e;
@@ -64,6 +64,8 @@
 
         c.amethod();
         d.amethod();
+
+        // this : 함수를 소유한 객체
 
 
     </script>
