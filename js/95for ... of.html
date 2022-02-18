@@ -9,19 +9,36 @@
     </style>
 </head>
 <body>
-    <input type="text" id="input1" value="jimin">
-    <p id="msg"></p>
-
+    
     <script>
-        document.querySelector("#input1").onkeyup = function() {
-            // let val = this.value; 
-            // 82string.html 참고
-            if (this.value.length < 3) {
-                document.querySelector("#msg").innerHTML = "3글자 이상 작성하세요.";
-            } else {
-                document.querySelector("#msg").innerHTML = "적당한 길이 입니다.";
-            }
+
+        let arr1 = [4, 7, 1, 2];
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i]);
+        } // 출력값 : 4 7 1 2 근데 복잡하니까 for....of를 쓰는거임
+
+        for (let item of arr1) {
+            console.log(item);
+        } // 출력 : 4 7 1 2
+
+        let str = "script";
+        for (let c of str) {
+            console.log(c);
+        } // 출력 : s c r i p t
+
+        // console.log(str[0]);
+        for (let i = 0; i < str.length; i++) {
+            console.log(str[i]);
         }
+
+        // 문제 :
+        let = reverseStr = "";
+        for (let item of str) {
+            reverseStr = item + reverseStr;
+        }
+
+        console.log(reverseStr); // "tpircs"
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
