@@ -24,38 +24,9 @@
     // h1에 "60점 이상입니다." 출력
     // "a", "A", "b", "B", "c", "C", "d", "D"가 아니면 "다시 입력해주세요"
 
-    <script>
+    <script> // B3switch.html
 
-        document.querySelector("#button1").onclick = function() {
-            let score = document.querySelector("#input1").value;
-            let head = document.querySelector("#result1");
-
-            switch (score) {
-                case "a":
-                case "A":
-                    head.innerHTML = "90점 이상입니다.";
-                    break;
-
-                case "b":
-                case "B":
-                    head.innerHTML = "80점 이상입니다.";                   
-                    break;
-
-                case "c":
-                case "C":
-                    head.innerHTML = "70점 이상입니다.";                   
-                    break;
-
-                case "d":
-                case "D":
-                    head.innerHTML = "60점 이상입니다.";                  
-                    break;
-
-                default:
-                    head.innerHTML = "다시 입력해주세요";          
-                    break;
-            }
-        }
+        
 
     </script>
 
