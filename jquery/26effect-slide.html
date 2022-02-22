@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+
+        #para1 {
+            display: none;
+        }
+
+    </style>
+
+    <script>
+
+        $(document).ready(function() {
+            $("#button1").click(function() {
+                $("#para1").slideDown();
+            });
+
+            $("#button2").click(function() {
+                $("#para2").slideUp();
+            });
+
+            $("#button3").click(function() {
+                $("#para3").slideToggle();
+            });
+
+            $("#button4").click(function() {
+                $("#para4").slideUp("slow");
+            });
+
+            $("#button5").click(function() {
+                $("#para5").slideUp("fast");
+            });
+
+            $("#button6").click(function() {
+                $("#para6").slideToggle(3000);
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <!-- (button#button$+p#para$>lorem^br)*10 -->
+    <button id="button1">slideDown</button>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus ab qui. Voluptatum perspiciatis quam aliquid molestiae animi voluptas atque eligendi consequatur enim facere blanditiis, numquam molestias deserunt, repellat vel.
+    </p>
+    <br>
+    <button id="button2">slideUp</button>
+    <p id="para2">
+        Doloremque, non, ad delectus dignissimos ea laboriosam assumenda repudiandae eum voluptatem ut, accusamus natus modi in at unde veniam! Totam explicabo sequi nihil natus maiores reiciendis saepe hic esse necessitatibus?
+    </p>
+    <br>
+    <button id="button3">slideToggle</button>
+    <p id="para3">
+        Aut non omnis quis. Tempora labore ipsam quaerat nesciunt placeat odio eius repudiandae porro consequuntur nobis, laborum perspiciatis beatae aperiam nam iste reprehenderit vitae quod in dicta saepe laudantium sequi.
+    </p>
+    <br>
+    <button id="button4">slideUp slow</button>
+    <p id="para4">
+        Minus qui neque quis eum molestiae ut commodi, optio tempora sint officiis iste et suscipit fugit, perferendis quaerat perspiciatis officia minima nostrum beatae vel enim blanditiis. Tempore dignissimos amet animi?
+    </p>
+    <br>
+    <button id="button5">slideUp fast</button>
+    <p id="para5">
+        Natus nemo quibusdam expedita cupiditate, dolor autem vero impedit, earum voluptatum, iste aut quasi provident incidunt! Ut quo saepe at perspiciatis inventore possimus, voluptatum, sed aliquam laudantium unde, maxime est.
+    </p>
+    <br>
+    <button id="button6">slideToggle 3000</button>
+    <p id="para6">
+        Optio ipsa aliquid officiis corporis eaque dolorem temporibus, ipsum earum. Dicta, ad alias eveniet aut nostrum aliquam nobis iste ipsum beatae eius similique natus laudantium quaerat repellendus temporibus, possimus iure.
+    </p>
+    <br>
+    <button id="button7"></button>
+    <p id="para7">
+        Dolore repellat laudantium, enim omnis, odio magni cupiditate eligendi quae dolorum, mollitia nobis tenetur excepturi? Nisi facere voluptatibus fuga molestiae ad est consectetur voluptatem voluptatum aperiam. Deserunt a maxime laboriosam!
+    </p>
+    <br>
+    <button id="button8"></button>
+    <p id="para8">
+        Quam, ut porro! Eligendi accusantium, amet magni officia veritatis laudantium iste architecto expedita quibusdam, praesentium consequuntur rerum aliquid itaque minima facilis eveniet. Ut voluptatum vel possimus at sequi consequuntur cumque.
+    </p>
+    <br>
+    <button id="button9"></button>
+    <p id="para9">
+        Asperiores vel libero delectus corporis suscipit reprehenderit distinctio id, odio recusandae eligendi quasi eum doloribus minima, voluptas nihil porro harum voluptate magni cupiditate nam iste? Doloribus dolorum tenetur sint totam?
+    </p>
+    <br>
+    <button id="button10"></button>
+    <p id="para10">
+        Quidem, sapiente optio quibusdam dicta quia suscipit quam qui veniam iste facere deserunt et commodi alias, obcaecati magnam delectus vel perspiciatis blanditiis odit unde aut cum animi? Repudiandae, architecto vitae!
+    </p>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
