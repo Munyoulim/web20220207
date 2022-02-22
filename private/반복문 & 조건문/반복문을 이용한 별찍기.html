@@ -13,17 +13,41 @@
     
     <script>
 
-        let z = "";
+        // let star = "";
+        // for (let i = 0; i < 10; i++) {
+        //     for (let j = 5; j > i; j--){
+        //         star += " ";
+        //     }
+        //     for (let k = 0; k <= i * 2; k++) {
+        //         star += "*";
+        //     }
+        //     star += "\n"
+        // }
 
-        for (let i = 0; i < 10; i++) {
-            for (let j = 0; j < i; j++) {
-                z += "*";
+            let row = "";
+            //상단-중간
+            for (let i=0; i<row; i++) {
+                for (let j=1; j<row-i; j++) {
+                    row += "";
+                }
+                for (let j=0; j < i*2+1; j++) {
+                    row += "*";
+                }
+                row += "\n";
             }
-            z += "\n";
-        }
-        console.log(z);
-
-
+                    
+            //하단(상단 뒤집기)
+            for (let i = row-1; i>0; i--) {
+                for (let j=row-i; j>0; j--) {
+                    row += "";
+                }
+                for (let j=i*2-1; j>0; j--) {
+                    row += "*";
+                }
+                row += "\n";
+            }
+        
+        console.log(row);
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
